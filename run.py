@@ -66,13 +66,13 @@ def save_users(user):
 
 
 def main():
-    cprint("Hello, Welcome to Password Locker. What is your name?", "magenta")
+    cprint("Hello, Welcome to Password Locker. What is your name?", "blue")
     user_name = input("Name:")
 
     while True:
         print(f"Hello {user_name}, Please use these short codes to either login to your account or sign in.") 
-        cprint("lg - log into your account", "magenta")
-        cprint("ca - create an account", "magenta")
+        cprint("lg - log into your account", "blue")
+        cprint("ca - create an account", "blue")
         s_code = input("Short Code:").lower()
 
         if s_code == 'ca':
@@ -84,8 +84,8 @@ def main():
 
             
 
-            cprint("You have successfully created an account", "green")
-            cprint("Please proceed to log in", "magenta")
+            cprint("You have successfully created an account", "blue")
+            cprint("Please proceed to log in", "blue")
             cprint('\n')
 
         
@@ -167,11 +167,11 @@ def main():
 
                     elif short_code == 'dc':
                         if display_credentials():
-                            cprint("Here is a list of all you credentials", "yellow")
+                            cprint("Here is a list of all you credentials", "green")
                             print('\n')
 
                             for credential in display_credentials():
-                                cprint(f"{credential.account_name}", "yellow")
+                                cprint(f"{credential.account_name}", "green")
                                 print("-"*30)
                                 print(f"Username: {credential.first_name} {credential.last_name}")
                                 print(f"Password: {credential.user_password}")
