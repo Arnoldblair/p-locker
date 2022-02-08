@@ -9,7 +9,7 @@ class TestPassword(unittest.TestCase):
     def setUp(self):      
         
         
-        self.new_users = User("Mbugua","jmos849")
+        self.new_users = User("Arnold","munene12")
        
 
 
